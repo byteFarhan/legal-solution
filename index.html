@@ -34,19 +34,30 @@
                     fontFamily: {
                         poppins: "'Poppins', sans-serif"
                     },
-                    constainer: {
+                    container: {
                         center: true,
                         padding: {
                             DEFAULT: '1.5rem',
                             md: '2rem',
                             lg: '4rem',
                             xl: '5rem',
-                            '2xl': '6rem',
+                            '2xl': '6rem'
                         }
                     }
+                    // constainer: {
+                    //     center: true,
+                    //     padding: {
+                    //         DEFAULT: '1.5rem',
+                    //         md: '2rem',
+                    //         lg: '4rem',
+                    //         xl: '5rem',
+                    //         '2xl': '6rem',
+                    //     }
+                    // }
                 }
             }
         }
+
     </script>
     <!-- Tailwind css customization -->
     <style>
@@ -63,7 +74,7 @@
     </style>
 </head>
 
-<body class="container font-poppins mx-auto">
+<body class="container font-poppins ">
     <header class="mt-5">
         <nav>
             <div class="drawer">
@@ -74,14 +85,14 @@
                         <div class="lg:hidden">
                             <label for="my-drawer" class=" drawer-button btn-ghost">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    class="inline-block w-5 h-5 md:w-8 md:h-8 stroke-current">
+                                    class="inline-block w-6 h-6 md:w-8 md:h-8 stroke-current">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M4 6h16M4 12h16M4 18h16"></path>
                                 </svg>
 
                         </div>
                         <div class="">
-                            <img src="./images/logo2.png" alt="" class="h-8 md:h-12">
+                            <img src="./images/logo2.png" alt="" class="h-8 md:h-10 lg:h-12">
                         </div>
                         <div class="hidden lg:block">
                             <ul class="flex  gap-6">
