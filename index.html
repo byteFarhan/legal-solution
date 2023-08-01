@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Legal Solution</title>
+    <link rel="shortcut icon" href="./images/business.png" type="image/x-icon">
     <!-- google font EB Garamond cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- google font poppins cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -27,7 +32,7 @@
                         primary: '#B68C5A'
                     },
                     fontFamily: {
-                        Garamond: "'EB Garamond', serif"
+                        poppins: "'Poppins', sans-serif"
                     },
                     constainer: {
                         center: true,
@@ -47,13 +52,73 @@
     <style>
         p {
             color: #707070;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h2,
+        h3,
+        h4 {
+            font-family: 'EB Garamond', serif;
         }
     </style>
 </head>
 
-<body>
-    <header>
+<body class="container font-poppins mx-auto">
+    <header class="mt-5">
+        <nav>
+            <div class="drawer">
+                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content ">
+                    <!-- Page content here -->
+                    <div class="navbar flex flex-row-reverse lg:flex-row justify-between items-center">
+                        <div class="lg:hidden">
+                            <label for="my-drawer" class=" drawer-button btn-ghost">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    class="inline-block w-5 h-5 md:w-8 md:h-8 stroke-current">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16"></path>
+                                </svg>
 
+                        </div>
+                        <div class="">
+                            <img src="./images/logo2.png" alt="" class="h-8 md:h-12">
+                        </div>
+                        <div class="hidden lg:block">
+                            <ul class="flex  gap-6">
+                                <li><a href="#Home">Home</a></li>
+                                <li><a href="#Services">Services</a></li>
+                                <li><a href="#Cases">Cases</a></li>
+                                <li><a href="#Blog">Blog</a></li>
+                                <li><a href="#Contact Us">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="hidden lg:block">
+                            <a href="#Free Consultation" class="bg-primary py-[18px] px-7 rounded-xl text-white">Free
+                                Consultation</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="drawer-side z-50  ">
+                    <label for="my-drawer" class="drawer-overlay"></label>
+                    <ul class="menu p-4 w-60 md:w-80 h-full bg-base-200 text-base-content ">
+                        <!-- Sidebar content here -->
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Cases">Cases</a></li>
+                        <li><a href="#Blog">Blog</a></li>
+                        <li><a href="#Contact Us">Contact Us</a></li>
+                        <li>
+                            <div class="">
+                                <a href="#Free Consultation"
+                                    class="bg-primary py-[10px] px-5 rounded-xl text-white">Free
+                                    Consultation</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
 
